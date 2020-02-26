@@ -27,35 +27,3 @@ class ItemTest < Minitest::Test
 
 
 end
-
-
-
-# pry(main)> vendor = Vendor.new("Rocky Mountain Fresh")
-# #=> #<Vendor:0x00007f85683152f0...>
-#
-# pry(main)> vendor.name
-# #=> "Rocky Mountain Fresh"
-#
-# pry(main)> vendor.inventory
-# #=> {}
-#
-# pry(main)> vendor.check_stock(item1)
-# #=> 0
-#
-# pry(main)> vendor.stock(item1, 30)
-#
-# pry(main)> vendor.inventory
-# #=> {#<Item:0x007f9c56740d48...> => 30}
-#
-# pry(main)> vendor.check_stock(item1)
-# #=> 30
-#
-# pry(main)> vendor.stock(item1, 25)
-#
-# pry(main)> vendor.check_stock(item1)
-# #=> 55
-#
-# pry(main)> vendor.stock(item2, 12)
-#
-# pry(main)> vendor.inventory
-# #=> {#<Item:0x007f9c56740d48...> => 55, #<Item:0x007f9c565c0ce8...> => 12}
