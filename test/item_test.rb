@@ -17,21 +17,19 @@ class ItemTest < Minitest::Test
     assert_instance_of Item, @item2
   end
 
+  def test_it_has_attributes
+    assert_equal "Tomato", @item2.name
+  end
+
+  def test_it_can_change_price_to_float
+    assert_equal 0.50, @item2.price
+  end
+
 
 end
 
 
-# pry(main)> item2 = Item.new({name: 'Tomato', price: '$0.50'})
-# #=> #<Item:0x007f9c565c0ce8...>
-#
 
-
-# pry(main)> item2.name
-# #=> "Tomato"
-#
-# pry(main)> item2.price
-# #=> 0.50
-#
 # pry(main)> vendor = Vendor.new("Rocky Mountain Fresh")
 # #=> #<Vendor:0x00007f85683152f0...>
 #
